@@ -45,7 +45,7 @@ export async function signUp(credentials: SignUpCredentials): Promise<User> {
 }
 
 export async function login(credentials: LoginCredentials): Promise<User> {
-    const response = await fetchData("https://team-g-old-crowdfunding-blockchain.onrender.com/users/login",
+    const response = await fetchData("https://team-g-old-crowdfunding-blockchain.onrender.com/api/users/login",
         {
             method: "POST",
             headers: {
