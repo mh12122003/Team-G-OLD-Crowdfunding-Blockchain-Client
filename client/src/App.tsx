@@ -30,14 +30,14 @@ export function App() {
       <Toaster />
       <Routes>
         <Route path="/" element={<Homepage />} />
-        <Route path="/signup" element={<Signup />} />
-        <Route path="/login" element={<Signin />} />
+        <Route path="https://sea-lion-app-dyh4n.ondigitalocean.app/signup" element={<Signup />} />
+        <Route path="https://sea-lion-app-dyh4n.ondigitalocean.app/login" element={<Signin />} />
 
-        <Route path="/manage" element={<ManageCampaign />} />
-        <Route path="/campaign-details/:id" element={<CampaignDetails />} />
+        <Route path="https://sea-lion-app-dyh4n.ondigitalocean.app/manage" element={<ManageCampaign />} />
+        <Route path="https://sea-lion-app-dyh4n.ondigitalocean.app/campaign-details/:id" element={<CampaignDetails />} />
 
         {/* Fallback for unknown routes */}
-        <Route path="/*" element={<NotFound />} />
+        <Route path="https://sea-lion-app-dyh4n.ondigitalocean.app/*" element={<NotFound />} />
       </Routes>
     </div>
   );
