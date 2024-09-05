@@ -29,15 +29,15 @@ export function App() {
     <div className="min-h-screen flex flex-col">
       <Toaster />
       <Routes>
-        <Route path="https://sea-lion-app-dyh4n.ondigitalocean.app/" element={<Homepage />} />
-        <Route path="https://sea-lion-app-dyh4n.ondigitalocean.app/signup" element={<Signup />} />
-        <Route path="https://sea-lion-app-dyh4n.ondigitalocean.app/login" element={<Signin />} />
+        <Route path="/" element={<Homepage />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/login" element={<Signin />} />
 
-        <Route path="https://sea-lion-app-dyh4n.ondigitalocean.app/manage" element={<ManageCampaign />} />
-        <Route path="https://sea-lion-app-dyh4n.ondigitalocean.app/campaign-details/:id" element={<CampaignDetails />} />
+        <Route path="/manage" element={<ManageCampaign />} />
+        <Route path="/campaign-details/:id" element={<CampaignDetails />} />
 
         {/* Fallback for unknown routes */}
-        <Route path="https://sea-lion-app-dyh4n.ondigitalocean.app/*" element={<NotFound />} />
+        <Route path="/*" element={<NotFound />} />
       </Routes>
     </div>
   );
