@@ -29,7 +29,7 @@ export function App() {
     <div className="min-h-screen flex flex-col">
       <Toaster />
       <Routes>
-        <Route path="/" element={<Homepage />} />
+        <Route path="https://sea-lion-app-dyh4n.ondigitalocean.app/" element={<Homepage />} />
         <Route path="https://sea-lion-app-dyh4n.ondigitalocean.app/signup" element={<Signup />} />
         <Route path="https://sea-lion-app-dyh4n.ondigitalocean.app/login" element={<Signin />} />
 
