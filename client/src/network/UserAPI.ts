@@ -28,12 +28,12 @@ async function fetchData(input: RequestInfo, init?: RequestInit) {
 
 
 export async function getLoggedInUser(): Promise<User> {
-    const response = await fetchData("https://seal-app-a7lmw.ondigitalocean.app/api/users", { method: "GET" });
+    const response = await fetchData("https://server-node-test-zeta.vercel.app/api/users", { method: "GET" });
     return response.json();
 }
 
 export async function signUp(credentials: SignUpCredentials): Promise<User> {
-    const response = await fetchData("https://seal-app-a7lmw.ondigitalocean.app/api/users/signup",
+    const response = await fetchData("https://server-node-test-zeta.vercel.app/api/users/signup",
         {
             method: "POST",
             headers: {
@@ -45,7 +45,7 @@ export async function signUp(credentials: SignUpCredentials): Promise<User> {
 }
 
 export async function login(credentials: LoginCredentials): Promise<User> {
-    const response = await fetchData("https://seal-app-a7lmw.ondigitalocean.app/api/users/login",
+    const response = await fetchData("https://server-node-test-zeta.vercel.app/api/users/login",
         {
             method: "POST",
             headers: {
